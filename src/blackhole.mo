@@ -1,4 +1,6 @@
-actor {
+import Principal "mo:base/Principal";
+
+actor Blackhole{
   public type canister_id = Principal;
 
   public type definite_canister_settings = {

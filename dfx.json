@@ -1,0 +1,27 @@
+{
+    "canisters": {
+      "blackhole": {
+        "main": "src/blackhole.mo"
+      },
+      "service": {
+        "main": "service/main.mo"
+      }
+    },
+    "defaults": {
+        "build": {
+          "packtool": ""
+        }
+      },
+      "networks": {
+        "tungsten": {
+          "providers": ["https://gw.dfinity.network"],
+          "type": "persistent"
+        },
+        "local": {
+          "bind": "0.0.0.0:8000",
+          "type": "ephemeral"
+        }
+      },
+      "dfx": "0.7.2"
+}
+    
