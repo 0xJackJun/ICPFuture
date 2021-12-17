@@ -1,3 +1,3 @@
 import idlImport from './service.did.js';
 export const idlFactory = idlImport;
-export const canisterId = "ryjl3-tyaaa-aaaaa-aaaba-cai";
+export const canisterId = "r7inp-6aaaa-aaaaa-aaabq-cai";

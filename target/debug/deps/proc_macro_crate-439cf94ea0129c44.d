@@ -1,0 +1,7 @@
+/Users/quanrong/rust-workplace/cycle_mail/target/debug/deps/proc_macro_crate-439cf94ea0129c44.rmeta: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-crate-1.1.0/src/lib.rs
+
+/Users/quanrong/rust-workplace/cycle_mail/target/debug/deps/libproc_macro_crate-439cf94ea0129c44.rlib: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-crate-1.1.0/src/lib.rs
+
+/Users/quanrong/rust-workplace/cycle_mail/target/debug/deps/proc_macro_crate-439cf94ea0129c44.d: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-crate-1.1.0/src/lib.rs
+
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-crate-1.1.0/src/lib.rs:

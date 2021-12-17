@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/quanrong/rust-workplace/cycle_mail/target/wasm32-unknown-unknown/release/build/typenum-27bb47195293c199/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/quanrong/rust-workplace/cycle_mail/target/wasm32-unknown-unknown/release/build/typenum-27bb47195293c199/out/op.rs

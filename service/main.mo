@@ -22,7 +22,7 @@ actor Cyclebalance{
         data.get()
     };
 
-    // public query func get(userIds: [UserId]): [UserData]{
-    //     data.getMany(userIds)
-    // };
+    public func getCount(): async Nat{
+        data.getCount()
+    }
 };

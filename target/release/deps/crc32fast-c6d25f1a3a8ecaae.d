@@ -1,0 +1,11 @@
+/Users/quanrong/rust-workplace/cycle_mail/target/release/deps/crc32fast-c6d25f1a3a8ecaae.rmeta: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/quanrong/rust-workplace/cycle_mail/target/release/deps/libcrc32fast-c6d25f1a3a8ecaae.rlib: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/quanrong/rust-workplace/cycle_mail/target/release/deps/crc32fast-c6d25f1a3a8ecaae.d: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs:

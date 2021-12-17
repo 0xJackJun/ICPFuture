@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/quanrong/rust-workplace/cycle_mail/target/release/build/typenum-6acea2401652a8f7/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/quanrong/rust-workplace/cycle_mail/target/release/build/typenum-6acea2401652a8f7/out/op.rs

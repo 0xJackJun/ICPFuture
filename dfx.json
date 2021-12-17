@@ -5,6 +5,11 @@
       },
       "service": {
         "main": "service/main.mo"
+      },
+      "heartbeat": {
+        "type": "custom",
+        "candid": "heartbeat/heartbeat.did",
+        "wasm": "target/wasm32-unknown-unknown/release/opt.wasm"
       }
     },
     "defaults": {

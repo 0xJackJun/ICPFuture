@@ -1,0 +1,2 @@
+type UserData = record { threshold : text; canister_id : text; email : text };
+service : () -> { get : () -> (vec UserData); setCounter : (principal) -> () }

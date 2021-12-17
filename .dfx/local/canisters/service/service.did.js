@@ -8,6 +8,7 @@ export default ({ IDL }) => {
   const canister_id = IDL.Principal;
   return IDL.Service({
     'create' : IDL.Func([UserData], [], []),
+    'getCount' : IDL.Func([], [IDL.Nat], []),
     'getCycle' : IDL.Func(
         [IDL.Record({ 'canister_id' : canister_id })],
         [IDL.Nat],

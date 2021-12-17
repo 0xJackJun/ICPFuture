@@ -8,6 +8,7 @@ type UserData_2 =
 type UserData = UserData_2;
 service : {
   create: (UserData) -> ();
+  getCount: () -> (nat);
   getCycle: (record {canister_id: canister_id;}) -> (nat);
   getUser: () -> (vec UserData);
 }

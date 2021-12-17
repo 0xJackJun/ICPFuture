@@ -10,8 +10,9 @@ module {
   public class Data(){
     // the "database" is just a local array
     var array: [UserData] = [];
-
+    var count: Nat = 0;
     public func createOne(userData: UserData) {
+        count := count + 1;
         array := Array.append<UserData>(array, [userData]);
     };
 
@@ -19,24 +20,8 @@ module {
         array
     };
 
-    // public func getMany(userIds: [UserId]): [UserData]{
-    //     func getUserData(userId: UserId): UserData{
-    //         Option.unwrap<UserData>(hashMap.get(userId))
-    //     };
-    //     Array.map<UserId, UserData>(userId,getUserData)
-    // };
-    
-    // public func get():[UserData]{
-    //     return hashMap.v
-    // } 
-
-    // public func makeUserData(userId: UserId, userData: UserData): UserData{
-    //     {
-    //         id = userId;
-    //         canister_id = userData.canister_id;
-    //         email = userData.email;
-    //         threshold = userData.threshold;
-    //     }
-    // };
+    public func getCount(): Nat{
+        count
+    }
   };
 };

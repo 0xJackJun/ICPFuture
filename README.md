@@ -1,71 +1,14 @@
-# Black hole Canister on the Internet Computer
+HOW THIS PROJECT ORGANIZED ？
+============================
 
-*A black hole is a region in space with a gravitational pull so strong that nothing, not even light, can escape through it.*
+The SRC folder is the blackhole canister, which MUST BE set to the controller of the canister you want to monitor. You can visit https://github.com/ninegua/ic-blackhole for more details. Since the cycle remaining in your canister is not public right now, you have to add blackhole to one of your controller so that the canister you moniting is public.
 
-Once a canister sets its only controller to a black hole, it becomes immutable and more!
+The SERVICE folder is the database and get_data canister, which your data is stored and exposed to others.
+![Service-api](https://github.com/jackqr/cycle_mail/raw/main/image/service_api)
 
-## How to verify it is a black hole
+The HEARTBEAT folder is the cron job canister, which can do cron jobs on IC and calling the motoko function in SERVICE canister per hour.
+![Heartbeat-api](https://github.com/jackqr/cycle_mail/raw/main/image/heartbeat_api)
 
-First, we can read the source code in [src/blackhole.mo](https://github.com/ninegua/ic-blackhole/blob/main/src/blackhole.mo).
-It is about 30 lines, so should be easy to convince ourselves it is not doing anything fishy.
+The WATCH folder is off-chain program, which can do load balance, send emails and frond end. Since every canister has limit memorys, we can get how much data does canister store, and rebalance to each database canister.
 
-Next, we need to make sure what is deployed on Internet Computer is compiled from this source code.
-To do this, we can verify hash of Wasm binary from three sources: built by github, built locally, and what is deployed.
-
-```
-$ curl -Ls https://github.com/ninegua/ic-blackhole/releases/download/0.0.0/blackhole-opt.wasm|sha256sum
-210cf941e5ca77daac314a91517483ac171264527e3d0d713b92bb95239d7de0  -
-
-$ cat $(nix-build 2>/dev/null)/bin/blackhole-opt.wasm |sha256sum
-210cf941e5ca77daac314a91517483ac171264527e3d0d713b92bb95239d7de0  -
-
-$ make dfx.json && dfx canister --network=ic --no-wallet info $(cat canister_ids.json|jq -r '.blackhole.ic')
-make: 'dfx.json' is up to date.
-Controller: e3mmv-5qaaa-aaaah-aadma-cai
-Module hash: 0x210cf941e5ca77daac314a91517483ac171264527e3d0d713b92bb95239d7de0
-```
-
-## Versions
-
-We may introduce more functionalities with each new version, and once deployed it becomes a new black hole.
-*Of course there are more than one black holes!*
-
-### Version 0.0.0
-
-Black hole Canister ID: [`e3mmv-5qaaa-aaaah-aadma-cai`](https://ic.rocks/principal/e3mmv-5qaaa-aaaah-aadma-cai)
-
-This version gives one interface `canister_status` that is identical to the IC management canister.
-
-```
-service : {
-  canister_status: (record {canister_id: canister_id;}) -> (canister_status);
-}
-```
-
-Canisters that make the black hole their controllers will make their canister status public.
-Anyone, including other canisters, can just call the black hole to find out the canister's status that otherwise remains hidden.
-Information such as remaining cycles, module hash, etc. are now publicly and programmatically accessible, if the given canister has added the black hole as one of its controllers.
-
-Why is it safe? Because the black hole canister itself is immutable, and cannot do anything to the canister it controls except revealing its status.
-
-Setting a black hole as the sole controller of a canister will make it non-upgradable.
-One can still top-up its cycles via the ledger, but no one can change its code or behavior.
-By the way, this is how the black hole will maintain its cycles balance, possibly through donations.
-
-## How to give your canister to a black hole
-
-**WARNING: Be cautious with the steps. You'll lose control to your canisters forever!**
-
-Well, if you decide to lose control by making your canister immutable, simply give it to a black hole.
-Pick one of the black hole canister IDs published above, and run the following command (`e3mmv-5qaaa-aaaah-aadma-cai` aka version 0.0.0 is used here):
-
-```
-dfx canister --network=ic update-settings --controller e3mmv-5qaaa-aaaah-aadma-cai [CANISTER_ID]
-```
-
-To set multiple controllers is a bit more involved due to the lack of support from [dfx].
-You can either do it programmatically by making a call to the IC management canister, or you can use [ic-utils].
-Or if you know a better way, please submit a pull request. Thanks!
-
-[dfx]: https://sdk.dfinity.org/docs/developers-guide/install-upgrade-remove.html
-[ic-utils]: https://github.com/ninegua/ic-utils
+The main logic is that heartbeat canister done two things: one is to call getData function in service canister, the other is to do cron job so it can consistantly get how much cycles left in the monitored canister. Since email service is not available on chian. So we have to do send email service off-chain. The off-chain services get the cycles data. And if it's less than the threshold user set originally, it will send email to the user.

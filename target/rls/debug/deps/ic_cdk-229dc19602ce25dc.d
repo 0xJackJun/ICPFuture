@@ -1,0 +1,12 @@
+/Users/quanrong/rust-workplace/cycle_mail/target/rls/debug/deps/ic_cdk-229dc19602ce25dc.rmeta: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/lib.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/call.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/stable.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/ic0.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/futures.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/printer.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/storage.rs
+
+/Users/quanrong/rust-workplace/cycle_mail/target/rls/debug/deps/ic_cdk-229dc19602ce25dc.d: /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/lib.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/call.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/stable.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/ic0.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/futures.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/printer.rs /Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/storage.rs
+
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/lib.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/call.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/stable.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/api/ic0.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/futures.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/printer.rs:
+/Users/quanrong/.cargo/registry/src/github.com-1ecc6299db9ec823/ic-cdk-0.3.3/src/storage.rs:

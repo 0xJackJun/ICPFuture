@@ -5,6 +5,8 @@ module {
   
   public type UserId = Principal;
 
+  public type Count = Nat;
+  
   public type DefiniteCanisterSettings = {
     freezing_threshold : Nat;
     controllers : [Principal];
