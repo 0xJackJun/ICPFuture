@@ -15,12 +15,12 @@ The main logic is that heartbeat canister done two things: one is to call getDat
 
 HOW TO BUILD ?
 =============
-Please check the version in dfx.json.
-Build canister in root folder:
-dfx start --clean --background
-dfx deploy
-Build go programL
-cd watch&&go mod tidy&&go run main.go
+Please check the version in dfx.json.  
+Build canister in root folder:  
+dfx start --clean --background  
+dfx deploy  
+Build go programL  
+cd watch&&go mod tidy&&go run main.go  
 
 TEST TESULT:
 ============
