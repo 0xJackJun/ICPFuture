@@ -11,7 +11,16 @@ The HEARTBEAT folder is the cron job canister, which can do cron jobs on IC and 
 
 The WATCH folder is off-chain program, which can do load balance, send emails and frond end. Since every canister has limit memorys, we can get how much data does canister store, and rebalance to each database canister.
 
-The main logic is that heartbeat canister done two things: one is to call getData function in service canister, the other is to do cron job so it can consistantly get how much cycles left in the monitored canister. Since email service is not available on chian. So we have to do send email service off-chain. The off-chain services get the cycles data. And if it's less than the threshold user set originally, it will send email to the user.
+The main logic is that heartbeat canister done two things: one is to call getData function in service canister, the other is to do cron job so it can consistantly get how much cycles left in the monitored canister.The Service Canister store and expose user data, such as email,threshold and monitor canister id. Service canister call the function in blackhole canister to get how much cycles left in the monitored canister. Since email service is not available on chian. So we have to do send email service off-chain. The off-chain services get the cycles data. And if it's less than the threshold user set originally, it will send email to the user.
+
+HOW TO BUILD ?
+=============
+Please check the version in dfx.json.
+Build canister in root folder:
+dfx start --clean --background
+dfx deploy
+Build go programL
+cd watch&&go mod tidy&&go run main.go
 
 TEST TESULT:
 ============
