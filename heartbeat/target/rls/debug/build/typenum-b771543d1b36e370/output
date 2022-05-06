@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/quanrong/rust-workplace/cycle_mail/heartbeat/target/rls/debug/build/typenum-b771543d1b36e370/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/quanrong/rust-workplace/cycle_mail/heartbeat/target/rls/debug/build/typenum-b771543d1b36e370/out/op.rs
